@@ -3,9 +3,15 @@ export interface BlockState {
   x: number;
   y: number;
   // 正确值
-  correct: number;
+  correctValue?: number;
+  // 是不是题目中的值
+  original: boolean;
   // 填充值
-  fill?: number;
+  displayValue?: number;
   // 标记值
-  markList: number[];
+  notes: number[];
+
+  flagged?: boolean;
+  revealed?: boolean;
+  mine?: boolean;
 }

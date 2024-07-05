@@ -9,6 +9,9 @@ import AutoImport from "unplugin-auto-import/vite";
 import Unocss from "unocss/vite";
 
 export default defineConfig({
+  server: {
+    port: 7836
+  },
   resolve: {
     alias: {
       "~/": `${path.resolve(__dirname, "src")}/`
